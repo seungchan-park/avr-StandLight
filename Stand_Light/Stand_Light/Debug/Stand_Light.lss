@@ -1,0 +1,558 @@
+
+Stand_Light.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000346  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002d2  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000d  00800100  00800100  00000346  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000346  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000378  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000f0  00000000  00000000  000003b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000013ba  00000000  00000000  000004a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000c44  00000000  00000000  00001862  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000086d  00000000  00000000  000024a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000016c  00000000  00000000  00002d14  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000005c1  00000000  00000000  00002e80  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000003ae  00000000  00000000  00003441  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000a0  00000000  00000000  000037ef  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	53 c0       	rjmp	.+166    	; 0xac <__bad_interrupt>
+   6:	00 00       	nop
+   8:	51 c0       	rjmp	.+162    	; 0xac <__bad_interrupt>
+   a:	00 00       	nop
+   c:	4f c0       	rjmp	.+158    	; 0xac <__bad_interrupt>
+   e:	00 00       	nop
+  10:	4d c0       	rjmp	.+154    	; 0xac <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4b c0       	rjmp	.+150    	; 0xac <__bad_interrupt>
+  16:	00 00       	nop
+  18:	49 c0       	rjmp	.+146    	; 0xac <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	47 c0       	rjmp	.+142    	; 0xac <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	45 c0       	rjmp	.+138    	; 0xac <__bad_interrupt>
+  22:	00 00       	nop
+  24:	43 c0       	rjmp	.+134    	; 0xac <__bad_interrupt>
+  26:	00 00       	nop
+  28:	41 c0       	rjmp	.+130    	; 0xac <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	3f c0       	rjmp	.+126    	; 0xac <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	3d c0       	rjmp	.+122    	; 0xac <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3b c0       	rjmp	.+118    	; 0xac <__bad_interrupt>
+  36:	00 00       	nop
+  38:	39 c0       	rjmp	.+114    	; 0xac <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	37 c0       	rjmp	.+110    	; 0xac <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	35 c0       	rjmp	.+106    	; 0xac <__bad_interrupt>
+  42:	00 00       	nop
+  44:	33 c0       	rjmp	.+102    	; 0xac <__bad_interrupt>
+  46:	00 00       	nop
+  48:	31 c0       	rjmp	.+98     	; 0xac <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	2f c0       	rjmp	.+94     	; 0xac <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	2d c0       	rjmp	.+90     	; 0xac <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2b c0       	rjmp	.+86     	; 0xac <__bad_interrupt>
+  56:	00 00       	nop
+  58:	29 c0       	rjmp	.+82     	; 0xac <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	27 c0       	rjmp	.+78     	; 0xac <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	25 c0       	rjmp	.+74     	; 0xac <__bad_interrupt>
+  62:	00 00       	nop
+  64:	23 c0       	rjmp	.+70     	; 0xac <__bad_interrupt>
+  66:	00 00       	nop
+  68:	21 c0       	rjmp	.+66     	; 0xac <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	1f c0       	rjmp	.+62     	; 0xac <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	1d c0       	rjmp	.+58     	; 0xac <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1b c0       	rjmp	.+54     	; 0xac <__bad_interrupt>
+  76:	00 00       	nop
+  78:	19 c0       	rjmp	.+50     	; 0xac <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	17 c0       	rjmp	.+46     	; 0xac <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	15 c0       	rjmp	.+42     	; 0xac <__bad_interrupt>
+  82:	00 00       	nop
+  84:	13 c0       	rjmp	.+38     	; 0xac <__bad_interrupt>
+  86:	00 00       	nop
+  88:	11 c0       	rjmp	.+34     	; 0xac <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_clear_bss>:
+  98:	21 e0       	ldi	r18, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	01 c0       	rjmp	.+2      	; 0xa2 <.do_clear_bss_start>
+
+000000a0 <.do_clear_bss_loop>:
+  a0:	1d 92       	st	X+, r1
+
+000000a2 <.do_clear_bss_start>:
+  a2:	ad 30       	cpi	r26, 0x0D	; 13
+  a4:	b2 07       	cpc	r27, r18
+  a6:	e1 f7       	brne	.-8      	; 0xa0 <.do_clear_bss_loop>
+  a8:	dd d0       	rcall	.+442    	; 0x264 <main>
+  aa:	11 c1       	rjmp	.+546    	; 0x2ce <_exit>
+
+000000ac <__bad_interrupt>:
+  ac:	a9 cf       	rjmp	.-174    	; 0x0 <__vectors>
+
+000000ae <stand_light_init>:
+﻿#include "Stand_Light.h"
+uint8_t ledstate=0;
+void stand_light_init()
+{
+	LED_init(&DDRD);
+  ae:	81 e3       	ldi	r24, 0x31	; 49
+  b0:	90 e0       	ldi	r25, 0x00	; 0
+  b2:	d3 d0       	rcall	.+422    	; 0x25a <LED_init>
+	Button_init(&btnGo, &DDRA, &PINA, 0);
+  b4:	20 e0       	ldi	r18, 0x00	; 0
+  b6:	49 e3       	ldi	r20, 0x39	; 57
+  b8:	50 e0       	ldi	r21, 0x00	; 0
+  ba:	6a e3       	ldi	r22, 0x3A	; 58
+  bc:	70 e0       	ldi	r23, 0x00	; 0
+  be:	81 e0       	ldi	r24, 0x01	; 1
+  c0:	91 e0       	ldi	r25, 0x01	; 1
+  c2:	94 d0       	rcall	.+296    	; 0x1ec <Button_init>
+	Button_init(&btnBack, &DDRA, &PINA, 1);
+  c4:	21 e0       	ldi	r18, 0x01	; 1
+  c6:	49 e3       	ldi	r20, 0x39	; 57
+  c8:	50 e0       	ldi	r21, 0x00	; 0
+  ca:	6a e3       	ldi	r22, 0x3A	; 58
+  cc:	70 e0       	ldi	r23, 0x00	; 0
+  ce:	87 e0       	ldi	r24, 0x07	; 7
+  d0:	91 e0       	ldi	r25, 0x01	; 1
+  d2:	8c c0       	rjmp	.+280    	; 0x1ec <Button_init>
+  d4:	08 95       	ret
+
+000000d6 <stand_light_excute>:
+}
+
+void stand_light_excute(volatile uint8_t *PORT)
+{
+  d6:	cf 93       	push	r28
+  d8:	df 93       	push	r29
+  da:	ec 01       	movw	r28, r24
+	switch(ledstate)
+  dc:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  e0:	82 30       	cpi	r24, 0x02	; 2
+  e2:	09 f4       	brne	.+2      	; 0xe6 <stand_light_excute+0x10>
+  e4:	3d c0       	rjmp	.+122    	; 0x160 <stand_light_excute+0x8a>
+  e6:	28 f4       	brcc	.+10     	; 0xf2 <stand_light_excute+0x1c>
+  e8:	88 23       	and	r24, r24
+  ea:	51 f0       	breq	.+20     	; 0x100 <stand_light_excute+0x2a>
+  ec:	81 30       	cpi	r24, 0x01	; 1
+  ee:	01 f1       	breq	.+64     	; 0x130 <stand_light_excute+0x5a>
+  f0:	7a c0       	rjmp	.+244    	; 0x1e6 <stand_light_excute+0x110>
+  f2:	83 30       	cpi	r24, 0x03	; 3
+  f4:	09 f4       	brne	.+2      	; 0xf8 <stand_light_excute+0x22>
+  f6:	4b c0       	rjmp	.+150    	; 0x18e <stand_light_excute+0xb8>
+  f8:	84 30       	cpi	r24, 0x04	; 4
+  fa:	09 f4       	brne	.+2      	; 0xfe <stand_light_excute+0x28>
+  fc:	5f c0       	rjmp	.+190    	; 0x1bc <stand_light_excute+0xe6>
+  fe:	73 c0       	rjmp	.+230    	; 0x1e6 <stand_light_excute+0x110>
+	{
+		case 0:
+		if (Button_getState(&btnGo)==ACT_PUSHED)
+ 100:	81 e0       	ldi	r24, 0x01	; 1
+ 102:	91 e0       	ldi	r25, 0x01	; 1
+ 104:	80 d0       	rcall	.+256    	; 0x206 <Button_getState>
+ 106:	81 30       	cpi	r24, 0x01	; 1
+ 108:	39 f4       	brne	.+14     	; 0x118 <stand_light_excute+0x42>
+		{
+			LED_writeData(PORT, 0x00);
+ 10a:	60 e0       	ldi	r22, 0x00	; 0
+ 10c:	ce 01       	movw	r24, r28
+ 10e:	a8 d0       	rcall	.+336    	; 0x260 <LED_writeData>
+			ledstate = 1;
+ 110:	81 e0       	ldi	r24, 0x01	; 1
+ 112:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 116:	67 c0       	rjmp	.+206    	; 0x1e6 <stand_light_excute+0x110>
+		}
+		else if (Button_getState(&btnBack)==ACT_RELEASED)
+ 118:	87 e0       	ldi	r24, 0x07	; 7
+ 11a:	91 e0       	ldi	r25, 0x01	; 1
+ 11c:	74 d0       	rcall	.+232    	; 0x206 <Button_getState>
+ 11e:	82 30       	cpi	r24, 0x02	; 2
+ 120:	09 f0       	breq	.+2      	; 0x124 <stand_light_excute+0x4e>
+ 122:	61 c0       	rjmp	.+194    	; 0x1e6 <stand_light_excute+0x110>
+		{
+			LED_writeData(PORT, 0x00);
+ 124:	60 e0       	ldi	r22, 0x00	; 0
+ 126:	ce 01       	movw	r24, r28
+ 128:	9b d0       	rcall	.+310    	; 0x260 <LED_writeData>
+ 12a:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+			ledstate = 0;
+ 12e:	5b c0       	rjmp	.+182    	; 0x1e6 <stand_light_excute+0x110>
+		}
+		break;
+		case 1:
+		if (Button_getState(&btnGo)==ACT_PUSHED)
+ 130:	81 e0       	ldi	r24, 0x01	; 1
+ 132:	91 e0       	ldi	r25, 0x01	; 1
+ 134:	68 d0       	rcall	.+208    	; 0x206 <Button_getState>
+ 136:	81 30       	cpi	r24, 0x01	; 1
+ 138:	39 f4       	brne	.+14     	; 0x148 <stand_light_excute+0x72>
+		{
+			LED_writeData(PORT, (1<<0)|(1<<1));
+ 13a:	63 e0       	ldi	r22, 0x03	; 3
+ 13c:	ce 01       	movw	r24, r28
+ 13e:	90 d0       	rcall	.+288    	; 0x260 <LED_writeData>
+ 140:	82 e0       	ldi	r24, 0x02	; 2
+			ledstate = 2;
+ 142:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 146:	4f c0       	rjmp	.+158    	; 0x1e6 <stand_light_excute+0x110>
+		}
+		else if (Button_getState(&btnBack)==ACT_RELEASED)
+ 148:	87 e0       	ldi	r24, 0x07	; 7
+ 14a:	91 e0       	ldi	r25, 0x01	; 1
+ 14c:	5c d0       	rcall	.+184    	; 0x206 <Button_getState>
+ 14e:	82 30       	cpi	r24, 0x02	; 2
+ 150:	09 f0       	breq	.+2      	; 0x154 <stand_light_excute+0x7e>
+ 152:	49 c0       	rjmp	.+146    	; 0x1e6 <stand_light_excute+0x110>
+		{
+			LED_writeData(PORT, 0x00);
+ 154:	60 e0       	ldi	r22, 0x00	; 0
+ 156:	ce 01       	movw	r24, r28
+ 158:	83 d0       	rcall	.+262    	; 0x260 <LED_writeData>
+			ledstate = 0;
+ 15a:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		break;
+		case 2:
+		if (Button_getState(&btnGo)==ACT_PUSHED)
+ 15e:	43 c0       	rjmp	.+134    	; 0x1e6 <stand_light_excute+0x110>
+ 160:	81 e0       	ldi	r24, 0x01	; 1
+ 162:	91 e0       	ldi	r25, 0x01	; 1
+ 164:	50 d0       	rcall	.+160    	; 0x206 <Button_getState>
+ 166:	81 30       	cpi	r24, 0x01	; 1
+ 168:	39 f4       	brne	.+14     	; 0x178 <stand_light_excute+0xa2>
+		{
+			LED_writeData(PORT, (1<<0)|(1<<1)|(1<<2)|(1<<3));
+ 16a:	6f e0       	ldi	r22, 0x0F	; 15
+ 16c:	ce 01       	movw	r24, r28
+ 16e:	78 d0       	rcall	.+240    	; 0x260 <LED_writeData>
+			ledstate = 3;
+ 170:	83 e0       	ldi	r24, 0x03	; 3
+ 172:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		else if (Button_getState(&btnBack)==ACT_RELEASED)
+ 176:	37 c0       	rjmp	.+110    	; 0x1e6 <stand_light_excute+0x110>
+ 178:	87 e0       	ldi	r24, 0x07	; 7
+ 17a:	91 e0       	ldi	r25, 0x01	; 1
+ 17c:	44 d0       	rcall	.+136    	; 0x206 <Button_getState>
+ 17e:	82 30       	cpi	r24, 0x02	; 2
+		{
+			LED_writeData(PORT, 0x00);
+ 180:	91 f5       	brne	.+100    	; 0x1e6 <stand_light_excute+0x110>
+ 182:	60 e0       	ldi	r22, 0x00	; 0
+ 184:	ce 01       	movw	r24, r28
+			ledstate = 0;
+ 186:	6c d0       	rcall	.+216    	; 0x260 <LED_writeData>
+ 188:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		break;
+		case 3:
+		if (Button_getState(&btnGo)==ACT_PUSHED)
+ 18c:	2c c0       	rjmp	.+88     	; 0x1e6 <stand_light_excute+0x110>
+ 18e:	81 e0       	ldi	r24, 0x01	; 1
+ 190:	91 e0       	ldi	r25, 0x01	; 1
+ 192:	39 d0       	rcall	.+114    	; 0x206 <Button_getState>
+ 194:	81 30       	cpi	r24, 0x01	; 1
+		{
+			LED_writeData(PORT, (1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5));
+ 196:	39 f4       	brne	.+14     	; 0x1a6 <stand_light_excute+0xd0>
+ 198:	6f e3       	ldi	r22, 0x3F	; 63
+ 19a:	ce 01       	movw	r24, r28
+			ledstate = 4;
+ 19c:	61 d0       	rcall	.+194    	; 0x260 <LED_writeData>
+ 19e:	84 e0       	ldi	r24, 0x04	; 4
+ 1a0:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		else if (Button_getState(&btnBack)==ACT_RELEASED)
+ 1a4:	20 c0       	rjmp	.+64     	; 0x1e6 <stand_light_excute+0x110>
+ 1a6:	87 e0       	ldi	r24, 0x07	; 7
+ 1a8:	91 e0       	ldi	r25, 0x01	; 1
+ 1aa:	2d d0       	rcall	.+90     	; 0x206 <Button_getState>
+		{
+			LED_writeData(PORT, 0x00);
+ 1ac:	82 30       	cpi	r24, 0x02	; 2
+ 1ae:	d9 f4       	brne	.+54     	; 0x1e6 <stand_light_excute+0x110>
+ 1b0:	60 e0       	ldi	r22, 0x00	; 0
+ 1b2:	ce 01       	movw	r24, r28
+			ledstate = 0;
+ 1b4:	55 d0       	rcall	.+170    	; 0x260 <LED_writeData>
+ 1b6:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		break;
+		case 4:
+		if (Button_getState(&btnGo)==ACT_PUSHED)
+ 1ba:	15 c0       	rjmp	.+42     	; 0x1e6 <stand_light_excute+0x110>
+ 1bc:	81 e0       	ldi	r24, 0x01	; 1
+ 1be:	91 e0       	ldi	r25, 0x01	; 1
+ 1c0:	22 d0       	rcall	.+68     	; 0x206 <Button_getState>
+		{
+			LED_writeData(PORT, (1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)|(1<<6)|(1<<7));
+ 1c2:	81 30       	cpi	r24, 0x01	; 1
+ 1c4:	31 f4       	brne	.+12     	; 0x1d2 <stand_light_excute+0xfc>
+ 1c6:	6f ef       	ldi	r22, 0xFF	; 255
+ 1c8:	ce 01       	movw	r24, r28
+			ledstate = 0;
+ 1ca:	4a d0       	rcall	.+148    	; 0x260 <LED_writeData>
+ 1cc:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+		}
+		else if (Button_getState(&btnBack)==ACT_RELEASED)
+ 1d0:	0a c0       	rjmp	.+20     	; 0x1e6 <stand_light_excute+0x110>
+ 1d2:	87 e0       	ldi	r24, 0x07	; 7
+ 1d4:	91 e0       	ldi	r25, 0x01	; 1
+ 1d6:	17 d0       	rcall	.+46     	; 0x206 <Button_getState>
+ 1d8:	82 30       	cpi	r24, 0x02	; 2
+ 1da:	29 f4       	brne	.+10     	; 0x1e6 <stand_light_excute+0x110>
+		{
+			LED_writeData(PORT, 0x00);
+ 1dc:	60 e0       	ldi	r22, 0x00	; 0
+ 1de:	ce 01       	movw	r24, r28
+ 1e0:	3f d0       	rcall	.+126    	; 0x260 <LED_writeData>
+ 1e2:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+			ledstate = 0;
+ 1e6:	df 91       	pop	r29
+		}
+		break;
+	}
+ 1e8:	cf 91       	pop	r28
+ 1ea:	08 95       	ret
+
+000001ec <Button_init>:
+﻿#include "Button.h"
+
+void Button_init(button_t *btn, volatile uint8_t *ddr, uint8_t *pin ,uint8_t pinNum)
+{
+ 1ec:	fc 01       	movw	r30, r24
+ 1ee:	cb 01       	movw	r24, r22
+	btn->DDR = ddr;
+ 1f0:	71 83       	std	Z+1, r23	; 0x01
+ 1f2:	60 83       	st	Z, r22
+	btn->PIN = pin;
+ 1f4:	53 83       	std	Z+3, r21	; 0x03
+ 1f6:	42 83       	std	Z+2, r20	; 0x02
+	btn->pinNum = pinNum;
+ 1f8:	24 83       	std	Z+4, r18	; 0x04
+	btn->prevState = RELEASED;
+ 1fa:	31 e0       	ldi	r19, 0x01	; 1
+ 1fc:	35 83       	std	Z+5, r19	; 0x05
+	GPIO_initPin(btn->DDR, btn->pinNum, INPUT);
+ 1fe:	40 e0       	ldi	r20, 0x00	; 0
+ 200:	62 2f       	mov	r22, r18
+ 202:	3e c0       	rjmp	.+124    	; 0x280 <GPIO_initPin>
+ 204:	08 95       	ret
+
+00000206 <Button_getState>:
+}
+
+uint8_t Button_getState(button_t *btn)
+{
+ 206:	cf 93       	push	r28
+ 208:	df 93       	push	r29
+ 20a:	ec 01       	movw	r28, r24
+	uint8_t curState = GPIO_readPin(btn->PIN,btn->pinNum);
+ 20c:	6c 81       	ldd	r22, Y+4	; 0x04
+ 20e:	8a 81       	ldd	r24, Y+2	; 0x02
+ 210:	9b 81       	ldd	r25, Y+3	; 0x03
+ 212:	53 d0       	rcall	.+166    	; 0x2ba <GPIO_readPin>
+ 214:	98 2f       	mov	r25, r24
+	if ((curState == PUSHED)&&(btn->prevState == RELEASED))
+ 216:	81 11       	cpse	r24, r1
+ 218:	0b c0       	rjmp	.+22     	; 0x230 <Button_getState+0x2a>
+ 21a:	8d 81       	ldd	r24, Y+5	; 0x05
+ 21c:	81 30       	cpi	r24, 0x01	; 1
+ 21e:	41 f4       	brne	.+16     	; 0x230 <Button_getState+0x2a>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 220:	e3 ec       	ldi	r30, 0xC3	; 195
+ 222:	f9 e0       	ldi	r31, 0x09	; 9
+ 224:	31 97       	sbiw	r30, 0x01	; 1
+ 226:	f1 f7       	brne	.-4      	; 0x224 <Button_getState+0x1e>
+ 228:	00 c0       	rjmp	.+0      	; 0x22a <Button_getState+0x24>
+ 22a:	00 00       	nop
+	{
+		_delay_ms(10); // bouncing 방지
+		btn->prevState = PUSHED;
+ 22c:	1d 82       	std	Y+5, r1	; 0x05
+		return ACT_PUSHED;
+ 22e:	12 c0       	rjmp	.+36     	; 0x254 <Button_getState+0x4e>
+	}
+	else if ((curState != PUSHED)&&(btn->prevState == PUSHED))
+ 230:	99 23       	and	r25, r25
+ 232:	69 f0       	breq	.+26     	; 0x24e <Button_getState+0x48>
+ 234:	8d 81       	ldd	r24, Y+5	; 0x05
+ 236:	81 11       	cpse	r24, r1
+ 238:	0c c0       	rjmp	.+24     	; 0x252 <Button_getState+0x4c>
+ 23a:	83 ec       	ldi	r24, 0xC3	; 195
+ 23c:	99 e0       	ldi	r25, 0x09	; 9
+ 23e:	01 97       	sbiw	r24, 0x01	; 1
+ 240:	f1 f7       	brne	.-4      	; 0x23e <Button_getState+0x38>
+ 242:	00 c0       	rjmp	.+0      	; 0x244 <Button_getState+0x3e>
+ 244:	00 00       	nop
+	{
+		_delay_ms(10);
+		btn->prevState = RELEASED;
+ 246:	81 e0       	ldi	r24, 0x01	; 1
+ 248:	8d 83       	std	Y+5, r24	; 0x05
+		return ACT_RELEASED;
+ 24a:	82 e0       	ldi	r24, 0x02	; 2
+ 24c:	03 c0       	rjmp	.+6      	; 0x254 <Button_getState+0x4e>
+	}
+	return ACT_NONE;
+ 24e:	80 e0       	ldi	r24, 0x00	; 0
+ 250:	01 c0       	rjmp	.+2      	; 0x254 <Button_getState+0x4e>
+ 252:	80 e0       	ldi	r24, 0x00	; 0
+ 254:	df 91       	pop	r29
+ 256:	cf 91       	pop	r28
+ 258:	08 95       	ret
+
+0000025a <LED_init>:
+﻿#include "LED.h"
+
+void LED_init(volatile uint8_t *DDR)
+{
+	GPIO_initPort(DDR,OUTPUT); // &DDR을 쓰면 매개변수의 값이 아닌 매개변수의 주소가 되버린다.
+ 25a:	61 e0       	ldi	r22, 0x01	; 1
+ 25c:	08 c0       	rjmp	.+16     	; 0x26e <GPIO_initPort>
+ 25e:	08 95       	ret
+
+00000260 <LED_writeData>:
+}
+
+void LED_writeData(volatile uint8_t *PORT, uint8_t data)
+{
+	GPIO_writePort(PORT, data);
+ 260:	29 c0       	rjmp	.+82     	; 0x2b4 <GPIO_writePort>
+ 262:	08 95       	ret
+
+00000264 <main>:
+#include <util/delay.h>
+#include "AP/Stand_Light.h"
+
+int main(void)
+{
+	stand_light_init();
+ 264:	24 df       	rcall	.-440    	; 0xae <stand_light_init>
+	
+	    while (1) 
+    {
+		stand_light_excute(&PORTD);
+ 266:	82 e3       	ldi	r24, 0x32	; 50
+ 268:	90 e0       	ldi	r25, 0x00	; 0
+ 26a:	35 df       	rcall	.-406    	; 0xd6 <stand_light_excute>
+ 26c:	fc cf       	rjmp	.-8      	; 0x266 <main+0x2>
+
+0000026e <GPIO_initPort>:
+}
+
+uint8_t GPIO_readPort(volatile uint8_t *PIN) // 전체 입력
+{
+	return *PIN;
+}
+ 26e:	61 30       	cpi	r22, 0x01	; 1
+ 270:	21 f4       	brne	.+8      	; 0x27a <GPIO_initPort+0xc>
+ 272:	2f ef       	ldi	r18, 0xFF	; 255
+ 274:	fc 01       	movw	r30, r24
+ 276:	20 83       	st	Z, r18
+ 278:	08 95       	ret
+ 27a:	fc 01       	movw	r30, r24
+ 27c:	10 82       	st	Z, r1
+ 27e:	08 95       	ret
+
+00000280 <GPIO_initPin>:
+ 280:	fc 01       	movw	r30, r24
+ 282:	41 30       	cpi	r20, 0x01	; 1
+ 284:	59 f4       	brne	.+22     	; 0x29c <GPIO_initPin+0x1c>
+ 286:	20 81       	ld	r18, Z
+ 288:	81 e0       	ldi	r24, 0x01	; 1
+ 28a:	90 e0       	ldi	r25, 0x00	; 0
+ 28c:	02 c0       	rjmp	.+4      	; 0x292 <GPIO_initPin+0x12>
+ 28e:	88 0f       	add	r24, r24
+ 290:	99 1f       	adc	r25, r25
+ 292:	6a 95       	dec	r22
+ 294:	e2 f7       	brpl	.-8      	; 0x28e <GPIO_initPin+0xe>
+ 296:	82 2b       	or	r24, r18
+ 298:	80 83       	st	Z, r24
+ 29a:	08 95       	ret
+ 29c:	90 81       	ld	r25, Z
+ 29e:	21 e0       	ldi	r18, 0x01	; 1
+ 2a0:	30 e0       	ldi	r19, 0x00	; 0
+ 2a2:	02 c0       	rjmp	.+4      	; 0x2a8 <GPIO_initPin+0x28>
+ 2a4:	22 0f       	add	r18, r18
+ 2a6:	33 1f       	adc	r19, r19
+ 2a8:	6a 95       	dec	r22
+ 2aa:	e2 f7       	brpl	.-8      	; 0x2a4 <GPIO_initPin+0x24>
+ 2ac:	20 95       	com	r18
+ 2ae:	29 23       	and	r18, r25
+ 2b0:	20 83       	st	Z, r18
+ 2b2:	08 95       	ret
+
+000002b4 <GPIO_writePort>:
+ 2b4:	fc 01       	movw	r30, r24
+ 2b6:	60 83       	st	Z, r22
+ 2b8:	08 95       	ret
+
+000002ba <GPIO_readPin>:
+
+uint8_t GPIO_readPin(volatile uint8_t *PIN, uint8_t pinNum) // 부분 입력
+{
+	return ((*PIN & 1<<pinNum) != 0); // 예를들어 버튼이0b000x0000이면 0인지 아닌지 비교
+ 2ba:	fc 01       	movw	r30, r24
+ 2bc:	80 81       	ld	r24, Z
+ 2be:	90 e0       	ldi	r25, 0x00	; 0
+ 2c0:	02 c0       	rjmp	.+4      	; 0x2c6 <GPIO_readPin+0xc>
+ 2c2:	95 95       	asr	r25
+ 2c4:	87 95       	ror	r24
+ 2c6:	6a 95       	dec	r22
+ 2c8:	e2 f7       	brpl	.-8      	; 0x2c2 <GPIO_readPin+0x8>
+ 2ca:	81 70       	andi	r24, 0x01	; 1
+ 2cc:	08 95       	ret
+
+000002ce <_exit>:
+ 2ce:	f8 94       	cli
+
+000002d0 <__stop_program>:
+ 2d0:	ff cf       	rjmp	.-2      	; 0x2d0 <__stop_program>
