@@ -1,8 +1,6 @@
 # avr-StandLight
 
-1번 버튼을 누르면 LED ON
-
-2번 버튼을 누르면 LED ALL OFF
+Press button 1 to turn LED ON, press button 2 to turn off LED ALL
 
 https://github.com/seungchan-park/avr-StandLight/assets/157213595/67946758-94d2-445c-afb2-edc55224a9b8
 
